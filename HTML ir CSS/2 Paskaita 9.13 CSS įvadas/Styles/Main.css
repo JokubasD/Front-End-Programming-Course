@@ -1,0 +1,44 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+h1, h2, h3, h4{
+    text-align: center;
+}
+.newClass{
+    font-stretch: extra-expanded;
+    color:darkolivegreen
+}
+.chosenClass2{
+    color:yellow;
+    border: 3px dashed rgb(21, 64, 255);
+}
+.boldClass{
+    font-family:fantasy;
+    font-weight: bold;
+}
+.paverstasTekstas{
+    font-style: italic;
+}
+.paveikslocentras{
+    display: block;
+    margin: 0 auto;
+    }
+.zaliasTekstas{
+    color: darkgreen;
+    }
+.centras{
+    text-align: center;
+    }
+.isbraukimas{
+    text-decoration: line-through;
+    }
+.raudonasTekstas{
+    color: red;
+    }
+.melynasTekstas{
+    color: blue;
+    font-weight: bold;
+    }
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 0 auto;
+    }

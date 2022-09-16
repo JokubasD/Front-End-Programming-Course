@@ -1,0 +1,46 @@
+.kvadratas{
+    display: inline-block;
+    background-color: aquamarine;
+    border: 3px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 22px;
+}
+.stickyKonteineris{
+    height: 300px;
+}
+.statinis{
+    position:static;
+}
+.absolutus{
+    position: absolute;
+}
+.fiksuotas{
+    position:fixed;
+}
+.sticky{
+    position: sticky;
+}
+
+.top_20{
+    top: 20px;
+}
+.left_30{
+    left: 30px;
+}
+
+.reliatyvus{
+    position: relative;
+}
+
+.z_index{
+    z-index: 1;
+}
+
+.bottom{
+    bottom: 50px;
+}
+.kvadratuKonteineris{
+    background-color: blanchedalmond;
+}

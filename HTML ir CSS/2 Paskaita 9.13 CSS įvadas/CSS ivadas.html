@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>2 Paskaita - CSS Įvadas</title>
+        <style>
+            p{
+                font-weight:bold ;
+                color: blue;
+            }
+            #chosenID{
+                line-height: 30px;
+                color: darkorchid;
+            }
+            .chosenClass{
+                border: 3px solid purple;
+                border-radius: 10%;
+            }
+        </style>
+        <link rel="stylesheet" href="Main.css">  <!--Linking CSS file to the HTML file-->
+    </head>
+    <body>
+        <div style="font-family:monospace"> <!--Inline CSS-->
+            <h1>Inline CSS - Linjinis CSS</h1>
+            <p style="font-size: 40px;">
+                Linijinis stilizavimas naudojamas kai norima ant greituju pastilizuoti arba testuoti
+            </p>
+            <p style="color:rgb(255, 0, 0) ; background-color: rgb(148, 247, 117);">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea, nostrum.
+            </p>
+
+        </div>
+        <div> <!--Internal CSS-->
+            <h1>Internal CSS - Vidinis CSS</h1>
+            <p id="chosenID">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, impedit.
+            </p>
+            <p class="chosenClass">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, impedit.
+            </p>
+        </div>
+        <div> <!--External CSS-->
+            <h1>External CSS</h1>
+            <p class="newClass">
+                Lorem ipsum dolor, <span class="boldClass">sit amet</span> consectetur adipisicing elit. Voluptatem, quia?
+            </p>
+            <p class="chosenClass2">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, quia?
+            </p>
+        </div>
+        <div> <!--Konspektas, Abstract-->
+            <div> <!--CSS Rašymo būdai-->
+                <h1>CSS Rašymo būdai</h1>
+                <ul>
+                    <li>Inline - Linijinis rašomas tag'o viduje naudojant style atributą</li>
+                    <li>Internal - Vidinis rašomas style tag'o viduje(head dalyje).</li>
+                    <li>External - Išorinis rašomas atskirame CSS saile kurį reikia prijungti prie HTML naudojant link tag'ą</li>
+                </ul>
+            </div>
+            <div class="chosenClass" style="color: chocolate;"> <!--CSS Selector'iai-->
+                <h1>CSS Selector'iai</h1>
+                <ul>
+                    <li>Element - Parenkamas elementas pagal jo pavadinimą (p{})</li>
+                    <li>ID - Sukuriamas susigalvotas id pavadinimas ir priskiriamas vienam elementui (#ID{})</li>
+                    <li>Class - Sukuriamas susigalvotas klasės pavadinimas ir priskiriamas bet kokiaam kiekiui elementų (.KLASĖ{})</li>
+                </ul>
+            </div>
+            <div> <!-- Stiliai -->
+                <h1>CSS Stiliai</h1>
+                <ul>
+                    <li>color - skirtas pakeisti teksto spalvą (color:red)</li>
+                    <li>font-size - skirtas pakeisti teksto dydį (font-size: 20px)</li>
+                    <li>background-color - skirtais pakeisti fono spalvą (background-color:aqua) </li>
+                    <li>font-family - skirtas pakeisti teksto sriftą (font-family: monospace)</li>
+                    <li>text-align - skirtas lygiuoti tekstą (text-align: center)</li>
+                    <li>font-weight - skirtas pakeisti teksto storumą (font-weight: bold)</li>
+                    <li>line-height - skirtais pakeisti teksto aukštį (line-height: 20px)</li>
+                    <li>border - skirtas nurodyti rėmelio nustatymus (border: 3px solid blue)</li>
+                    <li>border-radius - skirtas apvalinti rėmelio kampus (border-radius: 10px)</li>
+                    <li>font-style - skirtas suteikti tekstui stilių (font-style: italic)</li>
+                </ul>
+            </div>
+        </div>
+        <div> <!--Spalvos-->
+            <h1>Spalvos</h1>
+            <ul>
+                <li>Spalvos vardo naudojimas. Yra 140 spalvų vardų. (red)</li>
+                <li>HSL naudojimas. Niekas jo nenaudoja. (hsl(0,100%, 50%))</li>
+                <li>HEX naudojimas. Naudojamas taip pat plačiai kaip ir RGB. (#FF0000)</li>
+                <li>RGB naudojimas. Naudojamas taip pat plačiai kaip ir HEX (rgb(255, 0, 0))</li>
+            </ul>
+            <h1>Permatomos spalvos</h1>
+            <ul>
+                <li> HSL permatomumas nurodomas nuo 0 iki 1. (hsla(0, 100%, 50%, 1)) </li>
+                <li>HEX permatomumas nurodomas nuo 00(pilnai permatomas) iki FF(pilnai matomas). (#FF0000FF) </li>
+                <li>RGB permatomumas nurodomas nuo 0 iki 1. (rgba(255, 0, 0, 1)</li>
+            </ul>
+            <h1>HEX ir RGB</h1>
+            <p>RGB - RedBlueGreen. Kiekvienos spalvos kiekio nurodai nuo 0 iki 255.</p>
+            <p>HEX - Kiekvienos spalvos kiekio nurodai nuo 00 iki FF</p>
+            
+        </div>
+    </body>
+</html>
