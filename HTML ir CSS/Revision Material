@@ -24,6 +24,7 @@ Flex - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
     href="#" will send the user to the top of the page
     <link rel="icon" href=""> is used to create an icon for the website
     Most websites use position:sticky to make their menu.
+    flex-flow allows to setup both flex-direction and flex-wrap at once
     
 -----------------------------------------------------------------------------------------------------------------------------------------
 CSS - CascadingStyleSheets - PakopiniaiStiliųŠablonai

@@ -57,6 +57,7 @@ li:hover{
     border: solid black;
     border-collapse: collapse;
     margin: 0 auto 50px;
+    overflow: hidden;
 }
 
 .nth_lentele th, .nth_lentele td{
@@ -64,4 +65,37 @@ li:hover{
     font-size: 20px;
     padding: 5px;
     text-align: center;
+    position: relative;
+}
+.nth_lentele tbody > tr:nth-child(5){
+    background-color: yellow;
+}
+/* komentavimo trumpinys - CTRL / */
+
+.nth_lentele tbody > tr:hover{
+    background-color: burlywood;
+}
+
+.nth_lentele td:after{
+    content: ":)";
+}
+/* Stulpeliu žymėjimas:
+Position
+z-index
+content
+width+height
+background-color */
+
+.nth_lentele td:hover::after{
+    background-color: aquamarine;
+    content: '';
+    position: absolute;
+    height: 10000px;
+    top: -5000px;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+}
+.nth_lentele th{
+    background-color: white;
 }
