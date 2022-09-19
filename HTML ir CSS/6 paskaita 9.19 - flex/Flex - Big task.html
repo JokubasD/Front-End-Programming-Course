@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 Paskaita</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <section> <!--Flex teorija-->
+        <h1>Display: flex</h1>
+        <p>
+            Suteikus konteineriui flex nustatymą, jo viduje elementai išsidėsto vienas šalia kito.<br>
+            Elementai gali susispausti, kad tilptų į vieną eilutę šitaip ignoruodami savo pačių nustatytus dydžius.<br>
+            Suteikus flex konteineriui flex-direction - galime valdyti jo viduje esančių elementų išsidėstymo tvarką.<br>
+            Suteikus flex konteineriui flex-wrap - galime nurodyti ar ir kaip elgtis esant elementų pertekliui vienoje eilutėje arba stulpelyje.<br>
+            Suteikus flex konteineriui justify-content - galime valdyti kaip elementai išsidėsto eilutėje(tarpai tarp elementų)(jeigu flex-direction yra row). <br>
+            Suteikus flex konteineriui align-items - galime valdyti kaip elementai išsidėsto (elementų grupės) stulpelyje(jeigu flex-direction yra row).<br>
+            Suteikus flex konteineriui align-content - galime valdyti kaip elementai išsidėsto (tarpai tarp elementų) stulpelyje(jeigu flex-direction yra row).<br>
+            Suteikus flex konteineriui gap - galime nurodyti kokie tarpai turi būti tarp jo vaikinių elementų.
+        </p>
+        <div class="flexContainer">
+            <div class="kvadratas">1</div>
+            <div class="kvadratas">2</div>
+            <div class="kvadratas">3</div>
+            <div class="kvadratas">4</div>
+            <div class="kvadratas">5</div>
+            <div class="kvadratas">6</div>
+            <div class="kvadratas">7</div>
+            <div class="kvadratas">8</div>
+            <div class="kvadratas">9</div>
+            <div class="kvadratas">10</div>
+            <div class="kvadratas">11</div>
+            <div class="kvadratas">12</div>
+        </div>
+    </section>
+    <section> <!--Uzdaviniai-->
+        <h1>Flex in Flex Pavyzdys</h1>
+        <div class="pirmasPratimas"> <!--Simple flex in flex--->
+            <div class="pirmaskvadratas kvadratai">1</div>
+            <div class="col1">
+                <div class="antraskvadratas kvadratai">2</div>
+                <div class="row1">
+                    <div class="treciaskvadratas kvadratai">3</div>
+                    <div class="ketvirtaskvadratas kvadratai">4</div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <img src="./images/Flex - big task.PNG">
+        <h1>Big Flex Task</h1>
+        <div class="bigFlexTask">
+            <div> <!--Big flex Task--> <!-- 1 -->
+                <div class="bigTaskContainer containerTaskCol">
+                    <div class="containerTask1NextLevel h33">
+                        <div class="backgroundBox w33"></div>
+                        <div class="backgroundBox w66"></div>
+                    </div>
+                    <div class="containerTask1NextLevel h33">
+                        <div class="backgroundBox w66"></div>
+                        <div class="backgroundBox w33"></div>                 
+                    </div>
+                    <div class="containerTask1NextLevel h33">
+                        <div class="backgroundBox w33"></div>
+                        <div class="backgroundBox w66"></div>               
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div> <!-- 2 -->
+                <div class="bigTaskContainer containerTaskRow">
+                    <div class="containerFlexTask3 w33">
+                        <div class="backgroundBox h33"></div>
+                        <div class="backgroundBox h66"></div>
+                    </div>
+                    <div class="containerFlexTask3 w33">
+                        <div class="backgroundBox h66"></div>
+                        <div class="backgroundBox h33"></div>
+                    </div>
+                    <div class="containerFlexTask3 w33">
+                        <div class="backgroundBox h33"></div>
+                        <div class="backgroundBox h66"></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div> <!-- 3 -->
+                <div class="bigTaskContainer containerTaskCol">
+                    <div class="containerTask2level1 h66">
+                        <div class="backgroundBox w66"></div>
+                        <div class="containerFlexTask2 w33">
+                            <div class="backgroundBox h50"></div>
+                            <div class="backgroundBox h50"></div>
+                        </div>
+                    </div>
+                    <div class="containerTask2level1 h33">
+                        <div class="backgroundBox w33"></div>
+                        <div class="backgroundBox w33"></div>
+                        <div class="backgroundBox w33"></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div> <!-- 4 -->
+                <div class="bigTaskContainer containerTaskCol">
+                    <div class="containerTask4level1 h25">
+                        <div class="backgroundBox containerFlexTask4 w40"></div>
+                        <div class="backgroundBox containerFlexTask4 w20"></div>
+                        <div class="backgroundBox containerFlexTask4 w40"></div>
+                    </div>
+                    <div class="containerTask4level1 h50">
+                        <div class="containerTask4level2 w20">
+                            <div class="backgroundBox h50"></div>
+                            <div class="backgroundBox h50"></div>
+                        </div>
+                        <div class="backgroundBox containerTask4level2 w60"></div>
+                        <div class="containerTask4level2 w20">
+                            <div class="backgroundBox h50"></div>
+                            <div class="backgroundBox h50"></div>
+                        </div>
+                    </div>
+                    <div class="containerTask4level1 h25">
+                        <div class="backgroundBox containerFlexTask4 w40"></div>
+                        <div class="backgroundBox containerFlexTask4 w20"></div>
+                        <div class="backgroundBox containerFlexTask4 w40"></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div> <!-- 5 -->
+                <div class="bigTaskContainer containerTaskCol">
+                    <div class="containerTask5Row h33">
+                        <div class="backgroundBox w33"></div>
+                        <div class="backgroundBox w66"></div>
+                    </div>
+                    <div class="containerTask5Row h33">
+                        <div class="backgroundBox w33"></div>
+                        <div class="containerTask5Row w33">
+                            <div class="containerTask5Col w50">
+                                <div class="backgroundBox h50"></div>
+                                <div class="backgroundBox h50"></div>
+                            </div>
+                            <div class="containerTask5Col w50">
+                                <div class="backgroundBox h50"></div>
+                                <div class="backgroundBox h50"></div>
+                            </div>
+                        </div>
+                        <div class="backgroundBox w33"></div>
+                    </div>
+                    <div class="containerTask5Row h33">
+                        <div class="backgroundBox w66"></div>
+                        <div class="backgroundBox w33"></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div> <!-- 6 -->
+                <div class="bigTaskContainer containerTaskCol">
+                    <div class="ContainerTask5Level1 h50">
+                        <div class="backgroundBox h100"></div>
+                    </div>
+                    <div class="containerTask5level1 h50">
+                        <div class="containerTask5level2 w33">
+                            <div class="containerTask5level3 h50">
+                                <div class="backgroundBox w50"></div>
+                                <div class="backgroundBox w50"></div>
+                            </div>
+                            <div class="containerTask5level2 h50">
+                                <div class="backgroundBox h100"></div>
+                            </div>
+                        </div>
+
+                        <div class="containerTask5level1 w33">
+                            <div class="backgroundBox w100"></div>
+                        </div>
+                        
+                        <div class="containerTask5level1 w33">
+                            <div class="backgroundBox w100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div> <!-- 7 -->
+                <div class="bigTaskContainer containerTaskCol">
+                    <div class="containerTask7Row h50">
+                        <div class="backgroundBox w75"></div>
+                        <div class="containerTask7Col w25">
+                            <div class="backgroundBox h50"></div>
+                            <div class="backgroundBox h50"></div>
+                        </div>
+                    </div>
+                    <div class="containerTask7RowRev h50">
+                        <div class="backgroundBox w75"></div>
+                        <div class="containerTask7Col w25">
+                            <div class="backgroundBox h50"></div>
+                            <div class="backgroundBox h50"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div> <!-- 8 -->
+                <div class="bigTaskContainer containerTaskCol">
+                    <div class="backgroundBox h50"></div>
+                    <div class="containerTask8Row h50">
+                        <div class="containerTask8Col w33">
+                            <div class="backgroundBox h50"></div>
+                            <div class="backgroundBox h50"></div>
+                        </div>
+                        <div class="backgroundBox w33"></div>
+                        <div class="containerTask8Col w33">
+                            <div class="backgroundBox h50"></div>
+                            <div class="backgroundBox h50"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div> <!-- 9 -->
+                <div class="bigTaskContainer containerTaskRow"> 
+                    <div class="containerTask9Col w40">
+                        <div class="backgroundBox h50"></div>
+                        <div class="containerTask9Col h50">
+                            <div class="containerTask9Row h33">
+                                <div class="backgroundBox w50"></div>
+                                <div class="backgroundBox w50"></div>
+                            </div>
+                            <div class="backgroundBox h66"></div>
+                        </div>
+                    </div>
+                    <div class="containerTask9Col w60">
+                        <div class="containerTask9Row h17">
+                            <div class="backgroundBox w33"></div>
+                            <div class="backgroundBox w33"></div>
+                            <div class="backgroundBox w33"></div>
+                        </div>
+                        <div class="backgroundBox h50"></div>
+                        <div class="containerTask9Row h33">
+                            <div class="backgroundBox w66"></div>
+                            <div class="containerTask9Col w33">
+                                <div class="backgroundBox h50"></div>
+                                <div class="backgroundBox h50"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div> <!-- 10 -->
+                <div class="bigTaskContainer containerTaskCol">
+                    <div class="containerTask10Row h33">
+                        <div class="backgroundBox w50"></div>
+                        <div class="containerTask10Row w50">
+                            <div class="containerTask10Col w33">
+                                <div class="backgroundBox h50"></div>
+                                <div class="backgroundBox h50"></div>
+                            </div>
+                            <div class="backgroundBox w66"></div>
+                        </div>
+                    </div>
+                    <div class="containerTask10Row h33">
+                        <div class="containerTask10Row w50">
+                            <div class="backgroundBox w66"></div>
+                            <div class="containerTask10Col w33">
+                                <div class="backgroundBox h50"></div>
+                                <div class="backgroundBox h50"></div>
+                            </div>
+                        </div>
+                        <div class="backgroundBox w50"></div>
+                    </div>
+                    <div class="containerTask10Row h33">
+                        <div class="backgroundBox w50"></div>
+                        <div class="containerTask10Row w50">
+                            <div class="containerTask10Col w33">
+                                <div class="backgroundBox h50"></div>
+                                <div class="backgroundBox h50"></div>
+                            </div>
+                            <div class="backgroundBox w66"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

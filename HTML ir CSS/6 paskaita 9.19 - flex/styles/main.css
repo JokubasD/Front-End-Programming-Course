@@ -73,11 +73,6 @@
     height: 300px;
     border: 1px solid black;
 }
-.containerTask1{
-    display: flex;
-    flex-direction: column;
-    gap: 1px
-}
 .containerTask1NextLevel{
     display: flex;
     gap: 1px
@@ -106,10 +101,15 @@
     width: 300px;
     height: 100px;
 }
-.containerTask2{
+.containerTaskCol{
     display: flex;
     flex-direction: column;
     gap:1px
+} 
+.containerTaskRow{
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
 }
 .containerTask2level1{
     display: flex;
@@ -119,4 +119,128 @@
     display: flex;
     flex-direction: column;
     gap:1px
+}
+.containerFlexTask3{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 1px;
+}
+.w40{
+    width: 40%;
+}
+.w20{
+    width: 20%;
+}
+.w60{
+    width: 60%;
+}
+.h25{
+    height: 25%;
+}
+.h50{
+    height: 50%;
+}
+.containerFlexTask4{
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+}
+.containerTask4level1{
+    display: flex;
+    gap:1px
+}
+.containerTask4level2{
+    display: flex;
+    flex-direction: column;
+    gap:1px
+}
+.containerTask5level1{
+    display: flex;
+    gap:1px
+}
+.containerTask5level2{
+    display: flex;
+    flex-direction: column;
+    gap:1px;
+}
+
+.w50{
+    width: 50%;
+}
+.containerTask5level3{
+    display: flex;
+    gap:1px
+}
+.w100{
+    width: 100%;
+}
+.h100{
+    height: 100%;
+}
+.containerTask5Row{
+    display: flex;
+    gap:1px
+}
+.containerTask7Row{
+    display: flex;
+    gap: 1px;
+}
+.containerTask7Col{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+.h75{
+    height: 75%;
+}
+.w75{
+    width: 75%;
+}
+.h25{
+    height: 25%;
+}
+.w25{
+    width: 25%;
+}
+.containerTask7RowRev{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1px;
+}
+
+.containerTask8Row{
+    display: flex;
+    gap: 1px;
+}
+.containerTask8Col{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+.containerTask9Col{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+.containerTask9Row{
+    display: flex;
+    gap: 1px;
+}
+.h17{
+    height: 17%;
+}
+.containerTask10Col{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+.containerTask10Row{
+    display: flex;
+    gap: 1px;
+}
+.containerTask10RowRev{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1px;
 }
