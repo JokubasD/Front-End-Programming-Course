@@ -1,0 +1,55 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.bigIcon{
+    font-size:50px;
+}
+
+.greenIcon{
+    color: green;
+}
+
+/* mokinamės selector'ius */
+li{
+    font-size: 20px;
+}
+.class0{
+    color: red;
+}
+#id0{
+    color: blue;
+}
+.class1.class2{
+    text-decoration: underline;
+}
+.class3 .class4{
+    text-decoration: line-through;
+}
+section.class3 *{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h1, h3, h2{
+    text-align: center;
+}
+div p{
+    color: orange;
+}
+.class3 > p{
+    background-color: aquamarine;
+}
+a:link{
+    color: blue;
+}
+a:visited{
+    color: green;
+}
+a:active{
+    color: red;
+}
+
+li:hover{
+    background-color: black;
+    color: white;
+}
