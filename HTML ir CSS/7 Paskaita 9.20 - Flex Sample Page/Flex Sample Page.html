@@ -8,20 +8,161 @@
     <link rel="stylesheet" href="./Styles/Main.css">
   </head>
   <body>
+    <!--Header-->
     <header>
         <div class="mainLogo">
             <a href="#home"><b>BR</b> Architects</a>
         </div>
         <nav class="mainMenu">
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        
+    <!--/Header-->
+    <main class="mainSection">
+        <!--Hero Section-->
+        <section class="flexCenter hero"> 
+            <div class="backgroundText"> <!--Background Text-->
+                <h1><span class="br" id="home">BR</span> <span class="architects">Architects</span></h1>
+            </div>
+        </section>
+        <!--/Hero Section-->
+        <section class="projects"> <!--Projects-->
+            <h2 id="projects">Projects</h2>
+            <hr>
+            <div class="projectsContainer">
+                <div class="project">
+                    <img class="prImage" src="./Images/House1.jpg" alt="summer house"/>
+                    <h4 class="prTitle">Summer House</h4>
+                </div>
+                <div class="project">
+                    <img class="prImage" src="./Images/house2.jpg" alt="brick house"/>
+                    <h4 class="prTitle">Brick House</h4>
+                </div>
+                <div class="project">
+                    <img class="prImage" src="./Images/house3.jpg" alt="renovated"/>
+                    <h4 class="prTitle">Renovated</h4>
+                </div>
+                <div class="project">
+                    <img class="prImage" src="./Images/house4.jpg" alt="barn house"/>
+                    <h4 class="prTitle">Barn House</h4>
+                </div>
+                <div class="project">
+                    <img class="prImage" src="./Images/house4.jpg" alt="summer house"/>
+                    <h4 class="prTitle">Summer House</h4>
+                </div>
+                <div class="project">
+                    <img class="prImage" src="./Images/house3.jpg" alt="brick house"/>
+                    <h4 class="prTitle">Brick House</h4>
+                </div>
+                <div class="project">
+                    <img class="prImage" src="./Images/House1.jpg" alt="renovated"/>
+                    <h4 class="prTitle">Renovated</h4>
+                </div>
+                <div class="project">
+                    <img class="prImage" src="./Images/house2.jpg" alt="barn house"/>
+                    <h4 class="prTitle">Barn House</h4>
+                </div>
+            </div>
+        </section>
+        <section class="about"> <!--About-->
+            <div>
+                <h2 id="about">About</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+            <div class="contactInfo"> <!--Flex for About-->
+                <div class="card w20"> <!--One card-->
+                    <img src="./Images/team1.jpg" alt="teamprofiles">
+                    <h3>John Doe</h3>
+                    <p>CEO & Founder</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    <button>Contact</button>
+                </div>
+                <div class="card w20"> <!--One card-->
+                    <img src="./Images/team2.jpg" alt="teamprofiles">
+                    <h3>Jane Doe</h3>
+                    <p>Architect</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    <button>Contact</button>
+                </div>
+                <div class="card w20"> <!--One card-->
+                    <img src="./Images/team3.jpg" alt="teamprofiles">
+                    <h3>Mike Ross</h3>
+                    <p>Architect</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    <button>Contact</button>
+                </div>
+                <div class="card w20"> <!--One card-->
+                    <img src="./Images/team4.jpg" alt="teamprofiles">
+                    <h3>Dan Star</h3>
+                    <p>Architect</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    <button>Contact</button>
+                </div>
+            </div>
+        </section>
+        <section class="formSection">
+            <div class="container1">
+                <div class="formContainer">
+                    <h2 id="contact">Contact Form</h2>
+                    <form class="contactForm">
+                        <div class="inputBlock half">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="input" id="firstName">
+                        </div>
+                        <div class="inputBlock half">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="input" id="lastName">
+                        </div>
+                        <div class="inputBlock full">
+                            <label for="email">Email</label>
+                            <input type="text" class="input" id="email">
+                        </div>
+                        <div class="inputBlock full">
+                            <label for="subject">Subject</label>
+                            <input type="text" class="input" id="Subject">
+                        </div>
+                        <div class="inputBlock full">
+                            <label for="message">Message</label>
+                            <textarea name="Message" id="message" rows="3" class="input textArea"></textarea>
+                        </div>
+                        <input type="submit" value="Send Message" class="btn -">
+                    </form>
+                </div>
+            </div>
+            <div class="container2">
+                <div class="formContainer">
+                    <div class="contactContainer">
+                        <img src="./Images/paws.png" class="paws">
+                        <h2>CONTACT US</h2>
+                        <ul>
+                            <li>
+                                <span>Adress:</span>
+                                <p>Melbourne St,South Birbane 4101 Austraila</p>
+                            </li>
+                            <li>
+                                <span>Phone:</span>
+                                <p>+(000) 123 4567 89</p>
+                            </li>
+                            <li>
+                                <span>Email:</span>
+                                <p>info@yourdomain.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="footerStyles">
+            <div class="footerContainer">
+                <p>Copyright ©2022 All rights reserved | This template is made by Jokubas Dimsa</p>
+            </div>
+    </footer>
   </body>
 </html>
