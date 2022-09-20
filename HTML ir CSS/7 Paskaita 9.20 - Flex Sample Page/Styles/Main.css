@@ -1,0 +1,69 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+
+header{
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px ;
+    padding-top: 8px;
+    padding-bottom: 8px ;
+}
+
+.mainMenu{
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+.mainLogo{
+    display: flex;
+    align-items: center;
+}
+.mainLogo a{
+    text-decoration: none;
+    padding-left: 16px;
+    padding-right: 16px ;
+    padding-top: 8px;
+    padding-bottom: 8px ;
+}
+.mainLogo a:link{
+    color: black;
+}
+.mainLogo a:visited{
+    color: black;
+}
+.mainLogo a:hover{
+    background-color: gainsboro;
+}
+
+.mainMenu > ul{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.mainMenu li{
+    list-style-type: none;
+}
+.mainMenu a{
+    text-decoration: none;
+    padding-left: 16px;
+    padding-right: 16px ;
+    padding-top: 8px;
+    padding-bottom: 8px ;
+}
+.mainMenu a:link{
+    color: black;
+}
+.mainMenu a:visited{
+    color: black;
+}
+.mainMenu a:hover{
+    background-color: gainsboro;
+}
+body{
+    background-color: whitesmoke;
+}
