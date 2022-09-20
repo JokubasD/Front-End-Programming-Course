@@ -244,3 +244,22 @@
     flex-direction: row-reverse;
     gap: 1px;
 }
+.h20{
+    height: 20%;
+}
+.h80{
+    height: 80%;
+}
+.containerTask11Row{
+    display: flex;
+    gap: 1px;
+}
+.containerTask14Col{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+.containerTask14Row{
+    display: flex;
+    gap: 1px;
+}
