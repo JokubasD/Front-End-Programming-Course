@@ -1,0 +1,143 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+/* Form Section */
+
+.formSection{
+    background-color:burlywood;
+    padding: 4% 20px;
+
+}
+.formBox{
+    display: inline-block;
+    background-color: lightgray;
+    padding: 2%  50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rounded{
+    display: block;
+    border-radius: 25px;
+    border: none;
+    width: 400px;
+    padding: 15px 20px;
+    margin: 15px 0;
+}
+.rounded::placeholder{
+    color: rgb(175, 173, 173);
+}
+
+.textarea{
+    resize: none;
+}
+.formBox h3{
+    font-weight: bold;
+    color: rgb(26, 26, 63);
+    margin-bottom: 40px;
+}
+.sendButton{
+    border-radius: 25px;
+    border: none;
+    padding: 15px 35px;
+    background-color: rgb(156, 142, 250);
+    color: white;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+.sendButton:hover{
+    background-color: rgb(95, 80, 196);
+    padding: 15px 45px;
+}
+.termsAndConditions{
+    text-align: left;
+    margin-left: 20px;
+}
+.bdayText{
+    text-align: left;
+    margin-left: 10px;
+}
+/* Form Section 2 */
+#grad {
+    background-image: linear-gradient(to right, rgb(245, 149, 84) , rgb(233, 175, 104));
+}
+
+
+.formGrid1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+}
+.inputField{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid rgb(204, 202, 202);
+    width: 100%;
+}
+.formItem > label{
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.formBox2{
+    background-color: white;
+    max-width: 700px;
+    padding: 1% 30px;
+    border-radius: 5px;
+}
+.formBox2 > h3{
+    margin: 10px auto;
+    color: black;
+    font-weight: 500;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+.formSection2{
+    padding: 4% 30px;
+}
+.genderLabel{
+    font-weight: 600;
+}
+.formItem{
+    margin: 10px 0;
+    color: black;
+    opacity: 0.9;
+    font-weight: 400;
+}
+.underlineLetters{
+    text-decoration: underline;
+    text-decoration-color: rgb(230, 164, 79);
+    text-decoration-thickness: 3px;
+}
+.inputField::placeholder{
+    font-weight: 600;
+}
+.radioFlex{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+.genderForm h4{
+    font-weight: 600;
+    margin: 15px 0;;
+}
+.register{
+    background-image: linear-gradient(to right, rgb(245, 149, 84) , rgb(233, 175, 104));
+    padding: 7px 0;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 40px;
+}
+.register h4{
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.register:hover{
+    background-color: blue;
+}
+
+/* Form Section 3 */
+
