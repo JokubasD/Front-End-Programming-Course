@@ -1,0 +1,204 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+*{
+    box-sizing: border-box;
+}
+
+/* OurTeam Section*/
+
+.ourTeam{
+    padding: 5% 20px;
+    text-align: center;
+}
+
+.teamGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.teamItem img {
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.teamName{
+    font-weight: normal;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+.teamPosition{
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 0;
+}
+.teamItem{
+    text-align: center;
+}
+.teamItem img:hover{
+    opacity: 0.5;
+}
+.secTitle{
+    margin: 15px 0;
+}
+/* OurWork section */
+
+.ourWork{
+    background-color: #333333;
+    padding: 3.5% 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    height: auto;
+}
+.workGrid > .workItem{
+    color: white;
+}
+.workGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    height: 100%;
+}
+.workItem img{
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 40%;
+}
+.workItem > .back{
+    background-color: white;
+    color: black;
+    padding: 5px;
+    font-size: 15px;
+    object-fit: contain;
+}
+h4{
+    font-weight: normal;
+}
+.spacingText{
+    margin: 15px 10px;
+}
+.back h4{
+    font-weight: 400;
+}
+.imageBlock{
+    max-height: 200px;
+}
+/* Pricing Section */ 
+
+
+.pricingSection{
+    text-align: center;
+    padding: 4% 20px;
+}
+.pricingGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    padding: 20px 0;
+}
+.smallerBox{
+    border: 1px solid #ddd;
+}
+.smallerBox.back1{
+    background-color: black;
+    color: white;
+}
+.smallerBox.back2{
+    background-color: #666666;
+    color: white;
+}
+.back1, .back2{
+    color: white;
+    font-size: 24px;
+
+}
+.bold{
+    font-weight: bold;
+}
+.pricingItem:hover{
+    box-shadow: 0px 8px 10px rgb(138, 138, 138) ;
+}
+.smallerBox{
+    color: black;
+    padding: 14px 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    font-size: 15px;
+}
+.signUp{
+    display: inline-block;
+    color: white;
+    background-color: #009688;
+    padding: 16px 24px;
+    width: auto;
+    height: auto;
+    box-sizing: inherit;
+}
+.signUp:hover{
+    color: black;
+    background-color: #c2c2c2;
+}
+.greyText{
+    color: gray;
+}
+.back3{
+    background-color: #f0f0f0;
+}
+.priceTitle{
+    margin: 10px 0;
+    color: black;
+}
+.priceSubTitle{
+    margin: 15px 0;
+}
+
+.smallerBox h2{
+    letter-spacing: 4px; 
+
+}
+/*Popular posts aside */
+
+aside {
+    padding: 0 30px;
+    background-color: lightgray;
+    max-width: 500px;
+    margin-left: auto;
+    padding-top: 30px;
+  }
+  
+  .pTitle {
+    color: white;
+    background-color: #333;
+    padding: 15px 10px;
+    margin-bottom: 0;
+  }
+  
+  .postLine {
+    border-bottom: 1px solid #ddd;
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: 50px auto;
+    column-gap: 15px;
+    background-color: #fff;
+  }
+  
+  .postLine:hover {
+    background-color: rgb(202, 202, 202);
+  }
+  
+  .postLineImg{
+    grid-row: 1 / span 2;
+    align-self: center;
+    width: 100%;
+  }
+  
+  .postLine h4 {
+    margin: 8px 0 0;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .postLine p {
+    margin: 8px 0;
+    font-size: 14px;
+  }
