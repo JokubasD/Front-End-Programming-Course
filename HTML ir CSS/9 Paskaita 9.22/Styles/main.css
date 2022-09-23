@@ -106,6 +106,7 @@
     text-decoration: underline;
     text-decoration-color: rgb(230, 164, 79);
     text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
 }
 .inputField::placeholder{
     font-weight: 600;
@@ -199,4 +200,31 @@
 .cookies{
     padding: 25px;
     text-align: center;
+}
+
+/* Form Section 4 */
+.formSection4{
+    background-color: chocolate;
+    padding: 3% 0;
+}
+.left{
+    background-color: rgb(207, 205, 205);
+    padding: 3% 25px;
+    align-self: center;
+}
+.bigGrid{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 380px;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mapWindow{
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+}
+.right{
+    border: 1px solid black;
 }
