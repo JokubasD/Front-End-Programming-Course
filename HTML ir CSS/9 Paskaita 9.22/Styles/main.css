@@ -4,18 +4,16 @@
 
 /* Form Section */
 
-.formSection{
+.formSection1{
     background-color:burlywood;
     padding: 4% 20px;
-
+    
 }
 .formBox{
     display: inline-block;
     background-color: lightgray;
     padding: 2%  50px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 .rounded{
     display: block;
@@ -141,3 +139,64 @@
 
 /* Form Section 3 */
 
+.formSection3{
+    background-color: coral;
+    padding: 3% 30px;
+}
+.formGrid3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 3% 30px;
+    align-items: center;
+    width: 600px;
+}
+.oneField{
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid rgb(204, 202, 202)
+}
+.formBackground3{
+    background-color: white;
+    display: inline-block;
+}
+.formBackground3 h3{
+    margin-left: 30px;
+    margin-bottom: 0;
+}
+.formGrid3  .item1, .formGrid3  .item4, .formGrid3  .item5, .formGrid3  .item8, .formGrid3  .item10{
+    grid-column: 1 / span 2;
+    justify-content: center;
+  }
+.smallText{
+    font-size: 12px;
+    margin-top: 5px;
+}
+.innerFlex{
+    display: flex;
+    justify-content: space-between;
+}
+.customButton{
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.innerFlex > p{
+    margin-top: 7px;
+}
+.fieldFormat label{
+    font-weight: none;
+}
+.termText{
+    font-weight: bold;
+    text-decoration: underline ;
+    text-decoration-color: black
+}
+.cookies{
+    padding: 25px;
+    text-align: center;
+}
