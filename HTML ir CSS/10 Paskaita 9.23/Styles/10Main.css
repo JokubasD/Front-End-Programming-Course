@@ -1,0 +1,158 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import 'reset.css';
+.section1{
+    background-color: rgb(224, 217, 217);
+    padding: 3% 25px;
+}
+.post{
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+}
+.sectionGrid{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+    gap: 15px;
+}
+.article1{
+    grid-column: 1/ span 3;
+}
+.article4{
+    grid-column: 2 / span 3;
+}
+/* MEDIA QUERIES 1 */
+/*Tablet Screen 1 */
+
+@media screen and (max-width: 768px) {
+
+.sectionGrid{
+    background-color: coral;
+}
+.article1, .article4{
+    grid-column: span 4;
+}
+.article2, .article3{
+    grid-column: span 2;
+}
+}
+/* Mobile view 1 */
+
+@media screen and (max-width: 450px) {
+    .sectionGrid{
+        background-color: burlywood;
+    }
+    .article1, .article2, .article3, .article4{
+        grid-column: span 4;
+    }
+}
+/* SECTION 2 */
+.section2{
+    background-color: aliceblue;
+    padding: 3% 25px;
+}
+.area1{
+    background-color: coral;
+    text-align: center;
+    padding: 20px;
+    grid-area: Logo;
+}
+.area1 h3{
+    margin-bottom: 0;
+}
+.redBox{
+    background-color: rgb(216, 128, 141);
+    padding: 15px;
+}
+.redBox h4{
+    margin-bottom: 0;
+    font-weight: 400;
+}
+
+.area7{
+    background-color: coral;
+    text-align: center;
+    padding: 20px;
+    grid-area: Copyright;
+}
+.area5{
+    font-size: 20px;
+}
+.area7 h4{
+    margin-bottom: 0;
+}
+.area2{
+    grid-area: Home;
+}
+.area3{
+    grid-area: About;
+}
+.area4{
+    grid-area: Contact;
+}
+.area5{
+    grid-area: Responsive;
+}
+.area6{
+    grid-area: News;
+}
+.sectionGrid2{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 20px;
+    row-gap: 10px;
+    grid-template-areas: 
+    'Logo Logo Logo'
+    'Home Responsive News'
+    'About Responsive News'
+    'Contact Responsive News'
+    'Copyright Copyright Copyright';
+}
+/* MEDIA QUERIES 2 */
+/*Tablet Screen 2 */
+
+@media screen and (max-width: 768px) {
+    .sectionGrid2{
+        column-gap: 10px;
+        grid-template-areas: 
+        'Logo Logo Logo'
+        'Home Responsive Responsive'
+        'About Responsive Responsive'
+        'Contact Responsive Responsive'
+        'News Responsive Responsive'
+        'Copyright Copyright Copyright';
+    }
+    .area5{
+        border: 3px solid red;
+    }
+}
+    /* Mobile view 2 */
+    
+@media screen and (max-width: 450px) {
+    .sectionGrid2{
+        grid-template-areas: 
+        'Logo Logo Logo'
+        'Home Home Home'
+        'About About About'
+        'Contact Contact Contact'
+        'Responsive Responsive Responsive'
+        'News News News'
+        'Copyright Copyright Copyright';
+    } 
+    .area5{
+        border: none;
+    } 
+}
+/* SECTION 2 */
+.icon{
+    font-size: 6rem;
+}
+.topPart{
+    display: flex;
+}
+/* MEDIA QUERIES 3 */
+/*Mobile Screen 3 */
+.topPart h2{
+    padding: 0.5rem;
+}
