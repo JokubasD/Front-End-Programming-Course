@@ -1,0 +1,25 @@
+@import url('reset.css');
+
+.mainSection{
+    width: 70%;
+}
+
+.asideSection{
+    width: 30%;
+    max-height: 300px;
+    border: 1px solid red;
+    background-color: burlywood;
+    /* overflow: hidden;  all items ouside the container hidden and unaccesible */
+    /* overflow: scroll; all items are shown in a scroll option, however scrol left-right is seen which is mostly useless*/
+    /* overflow: auto;  all items are shown in a scroll option without scroll to sides ability*/
+    /* overflow-y:scroll; overflow hidden with a scroll option in the y direction */
+    /* overflow-x:scroll; overflow hidden with a scroll option in the x direction*/
+}
+aside.card{
+    background-color: #333;
+    color: snow;
+
+}
+body{
+    /* overflow: hidden; */
+}

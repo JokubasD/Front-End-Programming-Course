@@ -1,0 +1,243 @@
+@import 'reset.css';
+
+/* Global */
+
+html{
+  font-size: 16px;
+}
+
+.btn {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5em 1em 0.9em 1em;
+  border-radius: 0;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
+}
+.btn:hover{
+  color: #9bf1ff;
+  border: 1px solid #9bf1ff;
+}
+.btn:hover .btn--arrow::after{
+  color: red;
+}
+.btn--arrow::after{
+    content: '\2192';
+    font-size: 2rem;
+    padding: 0 0 0 10px;
+
+}
+.w70{
+    width: 70%;
+}
+.block{
+  display: block;
+}
+/* HERO */
+
+.hero {
+  min-height: 40vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  color: #fff;
+}
+.hero__image{
+    align-self: stretch;
+    object-fit: cover;
+    width: 100%;
+}
+.hero__title {
+  font-size: 1.5rem;
+}
+
+.hero__hr {
+  background-color: #fff;
+  height: 2px;
+  margin-bottom: 2rem;
+  width: 80%;
+  max-width: 1280px;
+}
+
+.hero__subTitle {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+.hero__header{
+    z-index: 10;
+    padding: 2rem;
+    margin: auto 0;
+}
+.hero__header,
+.hero__image,
+.post__overlay7 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+/* POSTS */
+
+.post {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 320px;
+}
+
+.post__header {
+  align-self: center;
+  max-width: 70%;
+  padding: 0 1.5rem;
+  color: white;
+  z-index: 4;
+}
+.post__header p{
+    font-size: 0.7em;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.post__header,
+.post__image,
+.post__overlay {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.post__image {
+  align-self: stretch;
+  object-fit: cover;
+  width: 100%;
+  height: 320px;
+}
+
+.post__overlay1{
+  background-color: rgba(61, 171, 225, 0.58);
+}
+.post__overlay2{
+    background-color: #8d82c4;
+    opacity: 0.58;
+}
+.post__overlay3{
+    background-color: #ec8d81;
+    opacity: 0.58;
+}
+.post__overlay4{
+    background-color: #e7b788;
+    opacity: 0.58;
+}
+.post__overlay5{
+    background-color: #8ea9e8;
+    opacity: 0.58;
+}
+.post__overlay6{
+    background-color: #87c5a4;
+    opacity: 0.58;
+}
+.post__overlay7{
+    background-color: #242943;
+    opacity: 0.58;
+}
+.post__title {
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+.post__hr {
+  background-color: #fff;
+  height: 2px;
+  margin: 0.7rem 0;
+  width: 110%;
+}
+.post__overlay {
+  transition: opacity 0.2s;
+}
+.post:hover .post__overlay {
+  opacity: 0.2;
+}
+/* Section 3 */
+.section3{
+  background-color: #2a2f4a;
+}
+.section3__header{
+  color: white;
+  z-index: 10;
+  padding: 2rem;
+  margin: auto 0;
+}
+.section3__title{
+  font-size: 1.5rem;
+  text-decoration: underline 2px;
+  text-decoration-color: white ;
+  text-underline-offset: 0.8rem;
+  margin-bottom: 2em;
+}
+.section3__subTitle{
+  font-size: 0.9rem;
+  color: white;
+  font-weight: 100;
+  line-height: 1.4;
+  margin: 0 0 2em 0;
+  opacity: 0.8;
+}
+/* Responsive */
+
+/* Tablet portrait */
+
+@media screen and (min-width: 480px) {
+  .posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .post, .post__image{
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1280px) {
+    html{
+      font-size: 24px;
+    }
+    .post1{
+        grid-area: one;
+    }
+    .post2{
+        grid-area: two;
+    } 
+    .post3{
+        grid-area: three;
+    }
+    .post4{
+        grid-area: four;
+    }
+    .post5{
+        grid-area: five;
+    }
+    .post6{
+        grid-area: six;
+    }
+    .post__headerw42{
+        width: 42%;
+    }
+    .posts {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-areas: 
+        'one one one one one two two two'
+        'three three three four four four four four'
+        'five five five five five six six six';
+      }
+    .post, .post__image{
+      height: 580px;
+    }
+    .hero__header{
+      padding: 0 5rem;
+    }
+    .post__header{
+      padding: 0 3rem;
+    }
+    .section3__header{
+      padding: 5rem;
+    }
+  }

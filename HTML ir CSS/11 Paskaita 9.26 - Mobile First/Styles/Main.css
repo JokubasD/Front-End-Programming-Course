@@ -1,0 +1,52 @@
+@import './reset.css';
+
+html{
+    font-size: 100%;
+}
+.post{
+    margin-bottom: 1rem;
+}
+.post h3{
+    font-size: 1.4rem;
+}
+@media screen and (min-width: 768px) {
+    html{
+        font-size: 120%;
+    }
+    .post{
+        margin-bottom: 0;
+    }
+    .card{
+        background-color: coral;
+    }
+    .post_1{
+        grid-area: one;
+    }
+    .post_2{
+        grid-area: two;
+    }
+    .post_3{
+        grid-area: three;
+    }
+    .post_4{
+        grid-area: four;
+    }
+    .posts{
+        display: grid;
+        gap: 1.6rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        'one one one one'
+        'two two three four';
+    }
+}
+@media screen and (min-width: 1200px) {
+    html{
+        font-size: 140%;
+    }
+    .posts{
+        grid-template-areas: 
+        'one one two three'
+        'one one four four';
+    }
+}
