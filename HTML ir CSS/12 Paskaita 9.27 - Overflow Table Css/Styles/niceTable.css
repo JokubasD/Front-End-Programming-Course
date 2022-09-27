@@ -1,0 +1,58 @@
+@import url('reset.css');
+
+.tableContainer {
+    height: 100vh;
+    background: linear-gradient(45deg, #4158d0, #c850c0);
+    padding: 5% 0;
+}
+
+table * {
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tableStyles {
+    margin: 0 auto;
+    background-color: white;
+    width: 958px;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(209, 207, 207);
+}
+
+table thead {
+    height: 60px;
+    background: #36304a;
+    border-radius: 15px;
+}
+.tableStyles td {
+    padding: 1em 2em;
+}
+.tableStyles th {
+    font-family: OpenSans-Regular;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: unset;
+}
+tbody tr td{
+    color: gray;
+}
+.tableStyles tbody tr{
+    transition: all 0.3s;
+}
+.tableStyles tbody tr:hover{
+    background-color: #333;
+}
+.tableStyles tbody tr:hover td{
+    color: white;
+}
