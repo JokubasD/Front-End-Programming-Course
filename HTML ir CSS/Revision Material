@@ -8,7 +8,9 @@ Forms - https://codeacademylt.sharepoint.com/:p:/s/FEU2/EdgJ-Vaf0oVKkeY8f89BdiIB
         https://www.w3schools.com/html/html_form_elements.asp
 Symbols - https://www.toptal.com/designers/htmlarrows/arrows/right-arrow/
 Pseudo elements - https://www.w3schools.com/csS/css_pseudo_elements.asp
-
+import elements:
+    -normalise: @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+    -font-awesome 4: @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
 -----------------------------------------------------------------------------------------------------------------------------------------
     Lorem(Number) creates a paragraph with (number) of words
     <img src=""> you can adjust size with atrributes width and height. To resize accordingly use auto for one of the fields

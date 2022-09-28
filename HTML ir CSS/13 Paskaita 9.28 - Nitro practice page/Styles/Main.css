@@ -1,8 +1,43 @@
 @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
-@import url('reset.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+@import url('reset.css');
 
 /* Global Styles */
 body{
     font-family: 'Open Sans', sans-serif;
+}
+html{
+    font-size: 16px;
+}
+
+.container{
+    padding: 0 1rem;
+}
+
+/* Variables */
+html{
+    --main-color: #007bff;
+    
+}
+/* Header */
+
+.main-header{
+    background-color: #fff;
+}
+.main-header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: black;
+    font-size: 2rem;
+    padding: 0.7em 0;
+}
+.logo span{
+    color: var(--main-color);
+}
+.main-nav .burger{
+    font-size: 22px;
 }
