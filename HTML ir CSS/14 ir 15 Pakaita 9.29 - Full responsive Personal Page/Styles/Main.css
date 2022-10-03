@@ -57,7 +57,7 @@ p{
     cursor: pointer;
     position: relative;
 }
-.btn-main:hover{
+.btn-main.btn-hover:hover{
     box-shadow: 0px 15.213px 20px 0px rgba(82, 122, 255, 0.3);
 }
 .text-uppercase{
