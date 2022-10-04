@@ -1,0 +1,90 @@
+@use 'reset';
+@use 'vars';
+@use 'common';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+
+
+// Latest News:
+.late-news{
+    background-color: #333;
+    color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    .container > .btn{
+        margin-bottom: 2rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .news__title{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .news__subtitle{
+        font-weight: 300;
+        text-align: center;
+    }
+    .news-post{
+        display: grid;
+        gap: 1rem;
+    }
+    .single-post{
+        display: flex;
+        flex-direction: column;
+        &__description{
+            background-color: #fff;
+            color: #333;
+            padding: 2rem 1rem;
+        }
+        &__title{
+            font-size: 1.5rem; 
+            margin-bottom: 2em;
+            transition: all 0.3s;
+            &:hover{
+                color: #fcb900;
+            }
+        }
+        &__short{
+            margin-bottom: 2em;
+        }
+        &__link{
+            color: var(--main-color)
+        }
+    }
+}
+// Counters Section
+.counters{
+    padding: 3rem 0;
+    background: url('../Images/front-page-counter.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    .counters-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 1rem;
+        &__item{
+            padding: 0 15px;
+        }
+        &__title{
+            text-align: center;
+            font-size: 4rem;
+            margin-bottom: 0;
+            color: #fff;
+            line-height: 1;
+        }
+        &__subtitle{
+            font-size: 1.2rem;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+            margin-bottom: 0;
+        }
+    }
+
+}
+@import 'media';

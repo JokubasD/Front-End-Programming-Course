@@ -1,0 +1,27 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn, .btn--outline {
+  border: none;
+  background-color: #081158;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.8em 1.5em;
+  border-radius: 2em;
+  border: 1px solid #081158;
+}
+
+.btn--outline {
+  background-color: transparent;
+  color: #081158;
+}
+
+.header-pill {
+  color: #fbb244;
+  background-color: rgba(251, 178, 68, 0.2);
+  display: inline;
+  font-size: 0.7rem;
+  padding: 0.4em 1.5em;
+  border-radius: 2em;
+}/*# sourceMappingURL=main.css.map */
