@@ -1,5 +1,98 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #ededed;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+textarea,
+select {
+  font-size: 16px;
+  padding: 0.3em 0.8em;
+  border-radius: 4px;
+  border: 1px solid #777;
+  display: block;
+  /* max-width: 300px; */
+}
+
+/* textarea {
+  min-height: 5rem;
+  min-width: 300px;
+  resize: vertical;
+} */
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+/*  helpers */
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.flex-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.align-start {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.max-w-300 {
+  max-width: 300px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+}
+
+p, li {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .btn, .btn--outline {
@@ -7,9 +100,10 @@ body {
   background-color: #081158;
   color: #fff;
   font-size: 1rem;
-  padding: 0.8em 1.5em;
+  padding: 12px 21px;
   border-radius: 2em;
   border: 1px solid #081158;
+  display: inline-block;
 }
 
 .btn--outline {
@@ -20,8 +114,141 @@ body {
 .header-pill {
   color: #fbb244;
   background-color: rgba(251, 178, 68, 0.2);
-  display: inline;
-  font-size: 0.7rem;
+  display: inline-block;
+  font-size: 10px;
   padding: 0.4em 1.5em;
-  border-radius: 2em;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  color: #081158;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.hero {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.hero .section-subtitle {
+  margin-bottom: 3em;
+}
+.hero button {
+  margin-bottom: 1.5rem;
+}
+
+.our-features {
+  text-align: center;
+}
+.our-features .container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.our-features__header .section-subtitle {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features-card__title, .our-services-grid__card__title {
+  margin-bottom: 0.2em;
+  text-transform: capitalize;
+}
+.features-card__icon, .our-services__icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.7em;
+  position: relative;
+  margin-top: 0.5em;
+}
+.features-card__icon::after, .our-services__icon::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(251, 178, 68, 0.5);
+  left: 45%;
+  top: -6px;
+}
+
+.agency {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.agency button {
+  padding: 12px 30px;
+}
+.agency-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+.agency-list__item::before {
+  content: "\f00c";
+  font-family: "FontAwesome";
+  padding-right: 0.5rem;
+}
+
+.our-services {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.our-services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+.our-services-grid__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  border: 1px solid rgb(224, 224, 224);
+  padding: 1rem;
+}
+.our-services__icon {
+  font-size: 2.5rem;
+}
+.our-services__icon::after {
+  left: 0%;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+  .container {
+    max-width: 1320px;
+    width: 91%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .hero .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .our-features .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 4rem;
+       -moz-column-gap: 4rem;
+            column-gap: 4rem;
+  }
+  .our-features .container img {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .our-features__header {
+    grid-column: 1/span 3;
+  }
+  .agency .container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 2rem;
+  }
+  .agency .container img {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
 }/*# sourceMappingURL=main.css.map */

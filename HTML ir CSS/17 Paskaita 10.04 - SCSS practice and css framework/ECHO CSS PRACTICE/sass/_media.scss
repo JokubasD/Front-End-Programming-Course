@@ -1,0 +1,42 @@
+@media screen and (min-width: 768px){
+    html{
+        font-size: 20px;
+    } 
+    .container{
+        max-width: 1320px;
+        width: 91%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .hero {
+        .container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 2rem;
+        }
+    }
+    
+    .our-features{
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 4rem;
+            img{
+                align-self: center;
+            }
+        }
+        &__header{
+            grid-column: 1/ span 3;
+        }
+    }
+    .agency{
+        .container{
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 2rem;
+            img{
+                align-self: center;
+            }
+        }
+    }
+}

@@ -1,3 +1,100 @@
+@use 'reset';
+@use 'vars' as v;
 @use 'common';
-@use 'vars';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
 
+.hero{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+    .section-subtitle{
+        margin-bottom: 3em;
+    }
+
+    button{
+        margin-bottom: 1.5rem;
+    }
+}
+//Features
+.our-features{
+    text-align: center;
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    &__header .section-subtitle{
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.features-card{
+        &__title{
+            margin-bottom: 0.2em;
+            text-transform: capitalize;
+        }
+        &__icon{
+            font-size: 2.5rem;
+            margin-bottom: 0.7em;
+            position: relative;
+            margin-top: 0.5em;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: transparentize(v.$secondary-color, 0.5);
+                left: 45%;
+                top: -6px;
+            }
+        }
+}
+//Agency
+.agency{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    button{
+        padding: 12px 30px;
+    }
+    &-list{
+        list-style-type: none;
+        padding-left: 0;
+        &__item::before{
+            content: '\f00c';
+            font-family: 'FontAwesome';
+            padding-right: 0.5rem;
+        }
+    }
+}
+//Our Services
+.our-services{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    &-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        &__card{
+            display: flex;
+            gap: 2rem;
+            border: 1px solid rgb(224, 224, 224);
+            padding: 1rem;
+            &__title{
+                @extend .features-card__title
+            }
+        }
+    } 
+    &__icon{
+        font-size: 2.5rem;
+        @extend .features-card__icon;
+        &::after{
+            left: 0%;
+        }
+    }
+}
+
+
+
+@import 'media';
